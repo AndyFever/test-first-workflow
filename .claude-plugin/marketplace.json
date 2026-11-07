@@ -1,0 +1,14 @@
+{
+  "name": "test-first-workflow",
+  "description": "Test-first delivery skills: planning, risk-based acceptance tests, isolated-unit TDD and coverage review.",
+  "owner": {
+    "name": "andyfever"
+  },
+  "plugins": [
+    {
+      "name": "test-first-workflow",
+      "source": "./",
+      "description": "Plan → acceptance test plan → isolated-unit TDD → coverage review, with human checkpoints."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "test-first-workflow",
+  "version": "0.1.0",
+  "description": "A test-first delivery workflow: plan the work, plan risk-based acceptance tests, build with isolated-unit TDD, then review coverage against the ticket.",
+  "author": {
+    "name": "andyfever"
+  },
+  "keywords": ["tdd", "testing", "acceptance-tests", "test-planning", "coverage", "mocks"]
+}
