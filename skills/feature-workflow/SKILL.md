@@ -1,6 +1,6 @@
 ---
 name: feature-workflow
-description: Use when starting work on a ticket, feature, user story, or bug fix that will change production code. Runs the full test-first workflow in order - plan the work, plan acceptance tests, build with isolated-unit TDD, review coverage - with human checkpoints between phases. Start here instead of jumping straight into code or TDD.
+description: Use when starting work on a ticket, feature, user story, or bug fix that will change production code. Runs the full test-first workflow in order - plan the work, plan acceptance tests, build with isolated-unit TDD, review coverage - with engineer checkpoints between phases. Start here instead of jumping straight into code or TDD.
 ---
 
 # Feature Workflow
@@ -53,7 +53,7 @@ specific questions it raises, and wait. A checkpoint is passed only when the
 engineer says so in the conversation. Record the approval (date and any changes)
 at the top of the output file.
 
-If the enginneer wants to skip a phase, that is their call. Record it and why in
+If the engineer wants to skip a phase, that is their call. Record it and why in
 `plan.md` so the coverage review knows.
 
 ## Rules

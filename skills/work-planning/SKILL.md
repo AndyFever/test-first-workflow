@@ -1,12 +1,12 @@
 ---
 name: work-planning
-description: Use when planning the work for a ticket, feature, or bug fix before any code is written. Confirms TDD applies, analyses the ticket's features and acceptance criteria, and works with the human to break the work into small, testable components. Produces docs/work/<ticket-id>/plan.md.
+description: Use when planning the work for a ticket, feature, or bug fix before any code is written. Confirms TDD applies, analyses the ticket's features and acceptance criteria, and works with the engineer to break the work into small, testable components. Produces docs/work/<ticket-id>/plan.md.
 ---
 
 # Work Planning
 
 Turn a ticket into an agreed list of small components that can each be built
-test-first. The human decides the breakdown; your job is to analyse, propose
+test-first. The engineer decides the breakdown; your job is to analyse, propose
 and ask good questions.
 
 ## 1. Confirm the approach
@@ -17,7 +17,7 @@ Assume TDD. Then check whether this work is one of the exceptions:
 - Generated code
 - Configuration only
 
-If it might be, ask the human. If they agree it is an exception, record that
+If it might be, ask the engineer. If they agree it is an exception, record that
 in `plan.md` and stop the test-first workflow for that part only.
 
 ## 2. Analyse the ticket
@@ -48,7 +48,7 @@ unit tests and the targets for integration tests.
 Suggest a build order: usually the component nearest the acceptance criteria's
 entry point first, mocking what it depends on, then work inward.
 
-## 4. Work it through with the human
+## 4. Work it through with the engineer
 
 Present the analysis and the proposed breakdown, then ask:
 
@@ -56,13 +56,13 @@ Present the analysis and the proposed breakdown, then ask:
 - The open questions.
 - Does the breakdown and build order make sense? Too big, too small, missing?
 
-Revise until the human agrees. Do not move on without that agreement.
+Revise until the engineer agrees. Do not move on without that agreement.
 
 ## Output: `docs/work/<ticket-id>/plan.md`
 
 ```markdown
 # <ticket-id>: <title>
-Approved: <date> by human (<any notes>)
+Approved: <date> by engineer (<any notes>)
 
 ## Approach
 TDD: yes | exceptions: <what and why>

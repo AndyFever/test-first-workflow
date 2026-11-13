@@ -9,7 +9,7 @@ against the ticket.
  │ 1. Plan the  │──▶│ 2. Plan acceptance   │──▶│ 3. Build with│──▶│ 4. Review       │
  │    work      │   │    tests (risk-based)│   │  isolated TDD│   │    coverage     │
  └──────┬───────┘   └──────────┬───────────┘   └──────────────┘   └─────────────────┘
-        │ human agrees         │ human approves
+        │ engineer agrees         │ engineer approves
         ▼ breakdown            ▼ test plan
 ```
 
@@ -17,7 +17,7 @@ against the ticket.
 
 | Skill | What it does | Output |
 |---|---|---|
-| `feature-workflow` | Runs the phases in order, with human checkpoints between them. Start here. | — |
+| `feature-workflow` | Runs the phases in order, with engineer checkpoints between them. Start here. | — |
 | `work-planning` | Checks TDD applies, analyses the ticket, and agrees a component breakdown with you. | `plan.md` |
 | `acceptance-test-planning` | Decides whether acceptance tests are needed, ranks risk, and places each test at the lowest level that can prove it (integration or e2e). | `test-plan.md` |
 | `isolated-tdd` | Red-green-refactor on small, isolated units. Collaborators are mocked behind explicit contracts, with deliberate test data. | Code + tests |

@@ -100,7 +100,7 @@ level that can show it. Then fix it with the same cycle.
 | Huge data setup | Missing builders, or unit needs too much data | Add a builder; pass the unit only what it uses |
 | Test breaks on harmless refactors | Asserting on interactions instead of outcomes | Assert on results; verify calls only when they are the behaviour |
 | Can't say what the mock should return | Contract unclear | Stop and agree the contract (update `plan.md`) |
-| Tempted to write the code first | — | Write the test you wish you had. Ask the human if the behaviour is unclear |
+| Tempted to write the code first | — | Write the test you wish you had. Ask the engineer if the behaviour is unclear |
 
 Exceptions to test-first (throwaway spikes, generated code, configuration)
-are agreed with the human, not assumed.
+are agreed with the engineer, not assumed.
