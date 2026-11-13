@@ -5,31 +5,33 @@ description: Use when starting work on a ticket, feature, user story, or bug fix
 
 # Feature Workflow
 
-Testing is not a phase that happens after the code. It starts when the work is
-planned and ends when coverage is checked against the ticket. This skill runs
-the phases in order and stops for the human at each checkpoint.
+Planning delivery into the begininning of the development is key for effective development. This
+set of skills enables the enineer to use agents to plan and execute the feature workflow in collaboration with each
+other with the agreed goals in mind.
+
+This skill allows the engineer to run a combination of workflows that fits with their development goals 
+and the risk associated with the feature.
 
 ## Phases
 
 | # | Skill to load | Output (in `docs/work/<ticket-id>/`) | Checkpoint |
 |---|---|---|---|
-| 1 | `work-planning` | `plan.md` | Human agrees the component breakdown |
-| 2 | `acceptance-test-planning` | `test-plan.md` | Human approves risks and test levels |
+| 1 | `work-planning` | `plan.md` | Engineer agrees the component breakdown |
+| 2 | `acceptance-test-planning` | `test-plan.md` | Engineer approves risks and test levels |
 | 3 | `isolated-tdd` (per component) | Code + tests | Acceptance tests for the component pass |
-| 4 | `coverage-review` | `coverage-review.md` | Human reviews gaps before calling it done |
+| 4 | `coverage-review` | `coverage-review.md` | Engineer reviews gaps before calling it done |
 
-When installed as a plugin the skills are namespaced, e.g.
+When installed as a plugin, the skills are namespaced, e.g.
 `test-first-workflow:work-planning`. Load each skill when its phase starts,
 not before; follow its instructions in full.
 
 ## How to run it
 
-1. **Find the ticket.** Get the ticket ID, title, description and acceptance
-   criteria. If the human gave only a summary, ask for the acceptance criteria
+1. **Find the ticket.** Get the ticket number and title, description and acceptance
+   criteria. If the engineer gave only a summary, ask for the acceptance criteria
    or agree them in phase 1. Use a short slug if there is no ticket ID.
-2. **Check for earlier work.** If `docs/work/<ticket-id>/` already exists,
-   read it and resume from the first phase whose output is missing or not
-   approved. Tell the human where you are resuming.
+2. **Check for an understanding of the data.** Analyse the ticket and any type files for the data model. 
+   Make sure we have a good understanding of what any mocks or fixtures would look like.
 3. **Run phases 1 and 2**, stopping at each checkpoint. Do not write
    production code or tests during planning.
 4. **Phase 3: double loop.** For each component in the agreed order:
@@ -46,9 +48,9 @@ not before; follow its instructions in full.
 
 ## Checkpoints
 
-A checkpoint means: show the human the output file's key points, ask the
+A checkpoint means: show the engineer the output file's key points, ask the
 specific questions it raises, and wait. A checkpoint is passed only when the
-human says so in the conversation. Record the approval (date and any changes)
+engineer says so in the conversation. Record the approval (date and any changes)
 at the top of the output file.
 
 If the human wants to skip a phase, that is their call. Record it and why in
@@ -58,6 +60,6 @@ If the human wants to skip a phase, that is their call. Record it and why in
 
 - No production code before phase 3.
 - Planning outputs are living documents. If phase 3 shows the plan was wrong,
-  update `plan.md` / `test-plan.md` and tell the human, rather than quietly
+  update `plan.md` / `test-plan.md` and tell the engineer, rather than quietly
   drifting from it.
 - Keep the outputs short. They are working notes, not reports.
