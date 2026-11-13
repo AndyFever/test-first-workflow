@@ -53,7 +53,7 @@ specific questions it raises, and wait. A checkpoint is passed only when the
 engineer says so in the conversation. Record the approval (date and any changes)
 at the top of the output file.
 
-If the human wants to skip a phase, that is their call. Record it and why in
+If the enginneer wants to skip a phase, that is their call. Record it and why in
 `plan.md` so the coverage review knows.
 
 ## Rules

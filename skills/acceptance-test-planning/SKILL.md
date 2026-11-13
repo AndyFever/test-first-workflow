@@ -7,7 +7,7 @@ description: Use when planning acceptance tests for a ticket, after the work is 
 
 Decide which behaviours need acceptance tests, how much testing each deserves,
 and at which level. Read `docs/work/<ticket-id>/plan.md` first; if it doesn't
-exist, get the acceptance criteria from the ticket and the human.
+exist, get the acceptance criteria from the ticket and the enginneer.
 
 Scope: functional behaviour only. Performance, load, security and
 accessibility testing are out of scope for this skill.
@@ -20,7 +20,7 @@ client or another system can observe. They may not be needed for:
 - Pure internal refactoring with no behaviour change (existing tests cover it)
 - Changes fully proven by unit tests inside one component with no boundary
 
-Decide, record the reason, and confirm with the human if the answer is "no".
+Decide, record the reason, and confirm with the enginneer if the answer is "no".
 
 ## 2. Rank risk
 
@@ -67,7 +67,7 @@ boundary values, invalid inputs. Note who creates it (test sets up its own
 data via builders/factories/API) and how it is cleaned up. Avoid depending on
 shared, pre-existing environment data.
 
-## 5. Review with the human
+## 5. Review with the enginneer
 
 Show the risk ranking and the test table. Ask specifically about:
 any criterion ranked high risk, any e2e test (is it worth its cost?), and any
@@ -77,7 +77,7 @@ any criterion ranked high risk, any e2e test (is it worth its cost?), and any
 
 ```markdown
 # Test plan: <ticket-id>
-Approved: <date> by human (<notes>)
+Approved: <date> by enginneer (<notes>)
 Acceptance tests needed: yes | no — <reason>
 
 ## Risk ranking

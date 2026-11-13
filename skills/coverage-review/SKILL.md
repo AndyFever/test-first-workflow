@@ -12,7 +12,7 @@ accessibility testing are out of scope.
 ## Inputs
 
 - `docs/work/<ticket-id>/plan.md` and `test-plan.md`, if they exist.
-- Otherwise the ticket's acceptance criteria (ask the human for them).
+- Otherwise the ticket's acceptance criteria (ask the enginneer for them).
 - The diff for this work (e.g. against the base branch) and the tests it adds
   or changes.
 
@@ -76,5 +76,5 @@ Date: <date> · Full suite: <passed/failed> (<counts>)
 <skipped phases, agreed exceptions, failures not caused by this work>
 ```
 
-Then summarise the gaps for the human. Fix gaps only with their agreement,
+Then summarise the gaps for the enginneer. Fix gaps only with their agreement,
 using the test-first cycle, and re-run the review afterwards.
