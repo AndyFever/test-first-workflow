@@ -9,7 +9,7 @@ against the ticket.
  │ 1. Plan the  │──▶│ 2. Plan acceptance   │──▶│ 3. Build with│──▶│ 4. Review       │
  │    work      │   │    tests (risk-based)│   │  isolated TDD│   │    coverage     │
  └──────┬───────┘   └──────────┬───────────┘   └──────────────┘   └─────────────────┘
-        │ engineer agrees         │ engineer approves
+        │ engineer agrees      │ engineer approves
         ▼ breakdown            ▼ test plan
 ```
 
